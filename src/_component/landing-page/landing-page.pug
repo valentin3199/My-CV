@@ -1,0 +1,24 @@
+-
+    var myFullName = 'Valentin Nicolae'
+    var myJobTitle = 'Web Developer'
+    var socialList = [
+        {icon:'facebook2', url: 'https://facebook.com/nicolaevalentin'},
+        {icon:'twitter', url: 'https://twitter.com/marianzburlea'},
+        {icon:'youtube', url: 'https://youtube.com/codetap'},
+    ]
+#landing-page
+.landing-page
+ .landing-page__wrapper
+    h1.landing-page__name=myFullName
+    h1.landing-page__title=myJobTitle
+    ul.landing-page__social
+        each social, key in socialList
+            li.landing-page__item
+                label.landing-page__label(for=`message-box-id-${key}`)
+                    span(class=`my-cv__icon--home`)
+    .landing-page__box-body
+        input.landing-page__box-radio(type="radio", name="awesome-radio", checked, id="default-message-radio")
+        each social, key in socialList
+            input.landing-page__box-radio(type="radio", name="awesome-radio", id = `message-box-id-${key}`)
+            .landing-page__box-message
+                a.landing-page__box-link(href=social.url, target="_blank")=social.url
