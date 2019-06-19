@@ -30,15 +30,13 @@
 }
 .landing-page__box-radio:checked + 
 .landing-page__box-message {
-    border: 1rem solid red;
-    padding: 1rem 0;
     display: inherit;
 }
 .landing-page__box-radio,
 .landing-page__box-message {
     display: none;
 }
-#defalut-messagge-radio:checked +
+#defalut-message-radio:checked +
 .landing-page__box-message +
 .landing-page__box-header {
     display: none;
