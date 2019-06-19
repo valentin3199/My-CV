@@ -1,49 +1,40 @@
 //- data come here
 -
-    var header = '#about-me'
+    var header = '#about me'
     var imagePath = "asset/image/image-with-me.jpg"
-    var myFullName = "Valentin Nicolae"
-    var myTitle = "Web Developer"
-    var slogan =  'I make the front end world a beteer place every day.'
-    var achievement = {
-        title: 'achevement'
-        content: 'I want make more money and i want working in IT'
+    var myFullName = "Nicolae Valentin"
+    var myTitle = "Junior Web Developer"
+    var slogan = `If there's no struggle, there's no progress.`
+    var achievements = {
+        title: 'achievement',
+        content: 'I upgrade myself every day, to be better, to be creative, to be on top.',
     }
     var coolStuff = {
-        title: 'ttt'
+        title: 'grab cool stuff',
         buttonList: [
             {
-                url: 'https://github.com/valentin3199',
-                icon: 'githup',
-                label: 'Click to visit the Githup project source'
-            }
-                                {
-                url: '#',
-                icon: "file-world",
-                label: ' Click to download the "one page" Microsoft World version'
-            }
-                        {
-                url: '#',
-                icon: "file-world",
-                label: 'Click to download the "one page" Microsoft World version'
+              url: 'https://github.com/valentin3199',
+              icon: 'github',
+              label: 'Click to visit the Github project source',
             }
         ]
     }
-
 //-the view comes here
 #about-me
 .about-me
     .about-me__header=header
     .about-me__avatar-wrapper
-        img.about-me__abater(src= imagePath)
+        img.about-me__avatar(src=imagePath)
     .about-me__full-name=myFullName
-    .about-me__full-title=myTitle
+    .about-me__title=myTitle
     .about-me__slogan=slogan
 
-    .about-me__title=achievement.title
-    .about-me__content=achivement.content
+    .about-me__title=achievements.title
+    .about-me__content=achievements.content
 
-    .each button in coolStuff.buttonList
-        a(href=button.url)
-        span=button.label
-        span(class= '.my-cv__icon--${button.icon}')
+    .about-me__title=coolStuff.title
+    .about-me__link-list
+        each button in coolStuff.buttonList
+            a.about-me__link(href=button.url)
+                span.about-me__link-description=button.label
+                span(class=`my-cv__icon--${button.icon}`)
