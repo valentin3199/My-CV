@@ -1,5 +1,36 @@
 -
     var awardHeader= '#awards'
+    var awardList = [
+        {
+        title: 'Best 30s elevator speed',
+        description: ' i ve won the 1st please',
+        location: 'Google campus',
+        date: '2019'
+    },
+    {
+        title: 'Best Web Site for presedint',
+        description: 'i ve won the best built website for the second',
+        location: 'Bucuresti/Romania',
+        date: '1999'
+    }];
+
 #award
 .award
     .award__header=awardHeader
+    each award in awardList
+        .award__card
+            .award__icon
+                span.my-cv__icon--trophy
+            .award__title=award.title
+
+            .award__icon
+                span.my-cv__icon--info
+            .award__desctioption=award.description
+
+            .award__icon
+                span.my-cv__icon--map2
+            .award__location=award.location
+
+            .award__icon
+                span.my-cv__icon--calendar
+            .award__date=award.date

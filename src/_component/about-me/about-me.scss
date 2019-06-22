@@ -1,12 +1,12 @@
 #about-me {
     background-image: radial-gradient(
-        ellipse,
+        ellipse
         #fb9e91
         #e97568
         )
 }
 .about-me__header{
-    color: white;
+    color: black;
     @extend %header;
 }
 .about-me__avatar {
