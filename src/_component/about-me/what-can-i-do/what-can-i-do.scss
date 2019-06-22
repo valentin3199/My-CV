@@ -1,0 +1,23 @@
+.what-can-i-do__header{
+    color: #b2c7e2;
+    @extend %header;
+}
+.what-can-i-do__title{
+    color: #415a67;
+    text-align:center;
+    font-size: 3rem;
+    padding:1rem;
+}
+.what-can-i-do__list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.what-can-i-do__skill{
+    border:0.1rem solid #b2c7e2 ;
+    padding:1rem;
+    margin: 0.2rem;
+    border-radius:0.5rem;
+    font-size: 1.5rem;
+    white-space:nowrap;
+}
