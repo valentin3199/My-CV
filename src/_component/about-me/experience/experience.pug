@@ -1,0 +1,38 @@
+//- model, data
+
+-
+
+    var header = '#experience'
+    var experienceList = [
+        {
+            title:'Senior Front-End Developer',
+            date: 'the date',
+            company: 'the company',
+            responsability:[
+                'responsability one',
+                'responsability two',
+                'responsability three',
+            ]
+        },
+        {
+            title:'Html star ',
+            date: 'the date',
+            company: 'the company',
+            responsability:[
+                'responsability one',
+                'responsability two',
+                'responsability three',
+            ]
+        }]:
+
+//- viw,presentation
+//-  CSS '+' CHEKED 
+    input
+    controlled container (div,orwhatever)
+
+#experience
+.experience
+    .experience__header=header
+    ecah experience in experienceList
+        input.experience__input(type="radio",name="my-experience")
+        .experience__title=experience.title
