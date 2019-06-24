@@ -1,10 +1,11 @@
-@import '_component/config/comon.scss';
-@import '_component/config/reset' ;
+@import '_component/config/reset';
+@import '_component/config/common';
+@import '_component/config/colour';
 @import '_component/leyout/leyout';
 @import '_component/font/icon-font';
 @import '_component/config/colour.scss';
 @import '_component/landing-page/landing-page';
-@import '_component/about-me/about-me.scss';
+@import '_component/about-me/about-me';
 @import '_component/about-me/award/award';
 @import '_component/about-me/what-can-i-do/what-can-i-do';
 @import '_component/about-me/experience/experience';
