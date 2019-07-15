@@ -1,40 +1,37 @@
-//- data comes here
 -
-    var header = '#about me'
-    var imagePath = "asset/image/vali-photo.jpg"
-    var myFullName = "Valentin Nicolae"
-    var myTitle = "Junior Web Developer"
-    var slogan = `When life gives you lemons make lemonade.`
-    var achievements = {
-        title: 'achievement',
-        content: 'I upgrade myself every day, to be better, to be creative, to be on top.',
-    }
-    var coolStuff = {
-        title: 'grab cool stuff',
-        buttonList: [
-            {
-              url: 'https://github.com/valentin3199',
-              icon: 'github',
-              label: 'Click to visit the Github project source',
-            }
-        ]
-    }
-//- the view comes here
+  var myFullName = 'Nicolae Valentin'
+  var myTitle = 'Junior Web Developer'
+  var header = '#about me'
+  var imgPath = 'asset/image/vali-photo.jpg'
+  //- var slogan = `I translate geek into English and I'm a problem solver driven by challenge. Work is my passion and I focus on innovation and design for the future.`
+  var slogan = `Every day I push my limits.`
+  var achievement = {
+    title: 'achievement',
+    content: `I became a Web Developer.`
+  }
+  var coolStuff = {
+    title: 'grab cool stuff',
+    linkList: [
+      {
+        url: "https://github.com/valentin3199",
+        icon: "github",
+        text: "Click to visit the GitHub project source"
+      }
+    ]
+  }
 #about-me
 .about-me
-    .about-me__header=header
-    .about-me__avatar-wrapper
-        img.about-me__avatar(src=imagePath)
-    .about-me__full-name=myFullName
-    .about-me__title=myTitle
-    .about-me__slogan=slogan
-
-    .about-me__title=achievements.title
-    .about-me__content=achievements.content
-
-    .about-me__title=coolStuff.title
-    .about-me__link-list
-        each button in coolStuff.buttonList
-            a.about-me__link(href=button.url)
-                span.about-me__link-description=button.label
-                span(class=`my-cv__icon--${button.icon}`)
+  .about-me__header=header
+  .about-me__avatar-wrapper
+    img.about-me__avatar(src=imgPath)
+  .about-me__full-name=myFullName
+  .about-me__title=myTitle
+  p.about-me__description=slogan
+  .about-me__title=achievement.title
+  p.about-me__description=achievement.content
+  .about-me__title=coolStuff.title
+  .about-me__link-list
+    each link in coolStuff.linkList
+      a.about-me__link(href=link.url)
+        span.about-me__link-description=link.text
+        span(class=`my-cv__icon--${link.icon}`)

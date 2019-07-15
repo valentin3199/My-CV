@@ -1,35 +1,37 @@
-
 -
-    var awardHeader = '#awards'
-    var awardList = [
-        {
-            title: 'something',
-            description: 'something',
-            location: 'something',
-            date: 'something'
-        },
-    ];
+  var header = '#awards'
+  var awardList = [
+    {
+      "title": " ",
+      "description": "",
+      "location": " London",
+      "date": "2019"
+    },
+    {
+      "title": "Best web site for you",
+      "description": "",
+      "location": "Bucuresti / Romania",
+      "date": "1999"
+    }
+  ]
 #award
 .award
-    //- ☐ trophy to tittle
-    //- ☐ info to description
-    //- ☐ map2 to location
-    //- ☐ calendar to date
-    .award__header=awardHeader
-    each award in awardList
-        .award__card
-            .award__icon
-                span.my-cv__icon--trophy
-            .award__title=award.title
-
-            .award__icon
-                span.my-cv__icon--info
-            .award__description=award.description
-
-            .award__icon
-                span.my-cv__icon--map2
-            .award__location=award.location
-
-            .award__icon
-                span.my-cv__icon--calendar
-            .award__date=award.date
+  .award__header=header
+  each award in awardList
+    .award__card
+      h3.award__card-title
+        span.award__card-icon
+          span.my-cv__icon--trophy
+        .award__item=award.title
+      .award__card-description
+        span.award__card-icon
+          span.my-cv__icon--info
+        .award__item=award.description
+      .award__card-location
+        span.award__card-icon
+          span.my-cv__icon--map2
+        .award__item=award.location
+      .award__card-date
+        span.award__card-icon
+          span.my-cv__icon--calendar
+        .award__item=award.date
