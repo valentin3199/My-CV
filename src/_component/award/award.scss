@@ -22,7 +22,7 @@
 .award__card-description,
 .award__card-location,
 .award__card-title {
-  border-top: .1rem solid #415a67;
+  border-top: .1rem solid $color-fiord;
   text-align: center;
   font-size: 1.2rem;
   line-height: 1.5rem;
@@ -32,19 +32,19 @@
   // margin-bottom: -0.1rem;
 
   &:nth-child(1)>.award__card-icon {
-    background-color: var(--color-pelorous);
+    background-color: $color-pelorous;
   }
 
   &:nth-child(2)>.award__card-icon {
-    background-color: var(--color-charm);
+    background-color:  $color-affair;
   }
 
   &:nth-child(3)>.award__card-icon {
-    background-color: var(--color-affair);
+    background-color: $color-charm;
   }
 
   &:nth-child(4)>.award__card-icon {
-    background-color: var(--color-confetti);
+    background-color: $color-confetti;
   }
 }
 

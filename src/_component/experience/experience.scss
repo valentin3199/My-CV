@@ -1,15 +1,15 @@
 .experience__header {
-  color: var(--color-periwinkle-gray);
+  color: $color-periwinkle-gray;
   
   @extend %header;
 }
 
 .experience__title {
   display: block;
-  background-color: var(--color-gumbo);
+  background-color: $color-gumbo;
   padding: 2rem;
   font-size: 1.8rem;
-  color: var(--color-white);
+  color: $color-white;
   cursor: pointer;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .experience__details {
-  border: 0.2rem solid var(--color-gumbo);
+  border: 0.2rem solid $color-gumbo;
   margin-top: -0.1rem;
   border-top: 0;
 }
@@ -70,10 +70,10 @@
   line-height: 1.5;
 
   &:nth-child(odd) {
-    background-color: var(--color-fantasy);
+    background-color: $color-fantasy;
   }
 
   &:nth-child(even) {
-    background-color: var(--color-twilight);
+    background-color: $color-twilight;
   }
 }
