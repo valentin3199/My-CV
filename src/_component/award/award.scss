@@ -1,6 +1,6 @@
 .award__header {
   @extend %header;
-  color: var(--color-periwinkle-gray);
+  color: $color-periwinkle-gray;
 }
 
 .award__card {
@@ -10,7 +10,7 @@
 
 .award__card-icon {
   padding: 2.5rem;
-  color: var(--color-white);
+  color: $color-white;
   font-size: 2.5rem;
 }
 

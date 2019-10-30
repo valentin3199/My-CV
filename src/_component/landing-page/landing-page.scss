@@ -24,7 +24,7 @@
 }
 
 .landing-page__social-label {
-  color: var(--color-white);
+  color: $color-white;
   padding: 0.1rem 0.3rem;
   font-size: 1.8rem;
   cursor: pointer;
@@ -33,7 +33,7 @@
 .landing-page__box-radio,
 .landing-page__box-message {
   display: none;
-  color: var(--color-white);
+  color: $color-white;
 }
 
 #message-default:checked + .landing-page__box-message + .landing-page__box-header {
@@ -64,7 +64,7 @@
 
 .landing-page__box-info,
 .landing-page__box-close {
-  background-color: var(--color-white);
+  background-color: $color-white;
   padding: 0.4rem;
   white-space: nowrap;
   line-height: 1.5rem;
@@ -93,5 +93,5 @@
   text-overflow: ellipsis;
   max-width: 80vmin;
   display: block;
-  color: var(--color-white);
+  color: $color-white;
 }
